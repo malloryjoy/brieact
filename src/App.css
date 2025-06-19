@@ -1,8 +1,559 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+@charset "UTF-8";
+@import url("https://use.typekit.net/wpu2spg.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Caprasimo&family=GFS+Didot&display=swap');
+
+
+@charset "UTF-8";
+@import url("https://use.typekit.net/wpu2spg.css");
+/*!
+* Start Bootstrap - Resume v7.0.3 (https://startbootstrap.com/theme/resume)
+* Copyright 2013-2021 Start Bootstrap
+* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
+*/
+/*!
+* Bootstrap v5.1.0 (https://getbootstrap.com/)
+* Copyright 2011-2021 The Bootstrap Authors
+* Copyright 2011-2021 Twitter, Inc.
+* Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Caprasimo&family=GFS+Didot&display=swap');
+
+/***********UNIVERSAL CONTENT***********/
+body{
+   background-image: url("./yellowbackdrop.png");
+  background-size: cover;
+   
+}
+
+.navItem{
+    width: 2em;
+    height: 2em;
+    color: #fff;
+    list-style-type: none;
+    background-color:#6a6a6a;
+    border-radius: 25px;
+}
+.fa-arrow-left{
+    color: #fff;
+    padding: .5em .5em;
+}
+
+#maincontent{
+    margin: 20% 0 25% 0;
+}
+
+#generator-maincontent{
+    margin: 5% 0 20% 0;
+}
+
+h1,h2,h3 {
+  font-family: "Caprasimo", serif;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+
+h1{
+    text-transform: uppercase;
+    text-shadow: 2px 5px 2px #6a6a6a;
+    /*text-stroke: 10px #6a6a6a; */
+    color: #fff;
+    text-align: center;
+    font-size: 52px;
+
+}
+
+h3{
+    text-align: center;
+    font-size: 32px;
+}
+
+.socialitem,.social-item svg{
+  width: 12px;
+  height:12px;
   text-align: center;
+}
+
+.social-item a{
+  text-align: center;
+}
+
+#footer{
+  font-family: "GFS Didot", serif;
+font-weight: 400;
+font-style: normal;
+font-size: 10px;
+}
+
+
+/***********HOMEPAGE***********/
+
+
+#frameworkbuttons{
+    text-align: center;
+}
+
+button.cbbuttons {
+    touch-action: manipulation;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+  }
+
+  button.cbbuttons a{
+    text-decoration:none !important;
+  }
+  button.cbbuttons{
+    touch-action: manipulation;
+    font-weight: 600;
+    color: #000;
+    text-transform: uppercase;
+    padding: 1.25em 2em;
+    background: rgb(217,217,217);
+    border: 2px solid #dbdbdb;
+    border-radius: 0.75em;
+    transform-style: preserve-3d;
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
+  }
+  button.cbbuttons::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #6a6a6a;
+    border-radius: 0.75em;
+    box-shadow: 0 0 0 2px #6a6a6a, 0 0.625em 0 0 #6a6a6a;
+    transform: translate3d(0, 0.15em, -1em);
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+  } 
+  button.cbbuttons:hover {
+    background: rgb(217,217,217);
+    transform: translate(0, 0.25em);
+  }
+  /*button.cbbuttons:hover::before {
+    box-shadow: 0 0 0 2px #6a6a6a, 0 0.5em 0 0 #6a6a6a;
+    transform: translate3d(0, 0.5em, -1em);
+  }*/
+  button.cbbuttons:active{
+    background: #ffffff;
+    transform: translate(0em, 0.75em);
+  }
+  button.cbbuttons:active::before {
+    box-shadow: 0 0 0 2px #6a6a6a, 0 0 #6a6a6a;
+    transform: translate3d(0, 0, -1em);
+  }
+
+  .front,button input[type=submit]{
+    
+        font-family: "Black Han Sans", serif;
+        font-weight: 400;
+        font-style: normal;
+        text-decoration:none !important;
+        color: #000 !important;
+  }
+
+  .front a{
+    color: #000 !important;
+    text-decoration:none !important;
+  }
+
+/**********STEP ONE **********/
+
+  #searchBox{
+    margin: 5% 10%;
+    padding: 2em 1.5em 5em 1.5em;
+    min-height:15vh;
+    background-color: rgba(15,0,0,.9);
+    border-radius: 25px;
+}
+
+#cheeseOptions{
+  margin-top: 2em;
+  width: 25em;
+  height: 3em;
+}
+
+option{
+  font-family: "Black Han Sans", serif;
+}
+
+#searchBox input {
+  height: 3em;
+  margin-top: 1.5em;
+}
+
+#filter {
+  margin: 5% 15%;
+  padding: 2em 1.5em 5em 1.5em;
+  min-height:10vh;
+  background-color: rgba(15,0,0,.9);
+  border-radius: 25px;
+}
+fieldset input{
+    display:flex-row;
+    justify-content: space-between;
+}
+
+label, #labelstyle{
+color:#fff;
+font-family: "Caprasimo", serif;
+}
+
+form{
+  text-align: center;
+}
+
+form #filter {
+  text-align: left;
+}
+
+form label{
+  margin-right: 2em;
+}
+
+
+li.popular-category{list-style: none; display:inline-block; }
+
+.searchBar{
+    text-align: left;
+    font-size: 24px;
+    font-family: "Caprasimo", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  
+}
+
+#searchBox label{
+  padding-bottom: 14em;
+}
+
+
+input[type=submit] {
+  touch-action: manipulation;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+
+}
+
+input[type=submit] {
+  touch-action: manipulation;
+  font-weight: 600;
+  color: #000;
+  text-transform: uppercase;
+  background: rgb(217,217,217);
+  padding: 1.25em 2em;
+  border: 2px solid #dbdbdb;
+  border-radius: 0.75em;
+  transform-style: preserve-3d;
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
+  
+  border-radius: 0.75em;
+  box-shadow: 0 0 0 2px #6a6a6a, 0 0.625em 0 0 #6a6a6a;
+}
+
+input[type=submit]:active::before {
+  /*box-shadow: 0 0 0 2px #6a6a6a, 0 0 #6a6a6a;*/
+  transform: translate3d(0, 0, -1em);
+  background-color: #fff !important;
+}
+
+
+input[type=submit]:active{
+  background: #dbdbdb;
+  /*transform: translate(0em, 0.75em); */
+}
+
+.front input[type=submit]:active {
+  background: #ffffff;
+  
+}
+
+input[type=submit]::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #6a6a6a;
+  border-radius: 0.75em;
+  box-shadow: 0 0 0 2px #6a6a6a, 0 0.625em 0 0 #6a6a6a;
+  transform: translate3d(0, 0.15em, -1em);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+} 
+input[type=submit]:hover {
+  background: rgb(255,255,255);
+  transform: translate(0, 0.25em);
+}
+
+.front input[type=submit]:active::before{
+  background: #ffffff;
+  transform: translate(0em, 0.75em);
+}
+
+.cbbuttons .front input[type=submit]:active{
+  background: #dbdbdb;
+  transform: translate(0em, 0.75em); 
+}
+
+
+
+
+/**********CHARCUTERIE BOARD GENERATOR**********/
+
+.newcheese, .chooseJS{
+  font-family: "Caprasimo", serif;
+  color: #000;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.newcheese a, .chooseJS{
+  text-decoration: none !important;
+}
+
+.goback .navItem {
+  width: 20em;
+  background-color: transparent !important;
+}
+
+.goback .navItem i {
+    width: 1em;
+    height: 1em;
+    color: #fff;
+    list-style-type: none;
+    background-color: #6a6a6a;
+    border-radius: 25px;
+    margin-right: 1em;
+}
+
+
+#charcuterie-main{
+  display: flex;
+  margin: 5% 15%;
+  
+}
+
+#cheeseinfo h3, #charcuterieboard h3, #plating h3{
+font-family: "Caprasimo", serif;
+font-weight: 400;
+font-style: normal;
+color: #fff !important;
+}
+
+#cheeseinfo p, #plating p{
+  font-family: "Caprasimo", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff !important;
+  }
+
+  #boardelements p{
+    color: #000 !important;
+  }
+
+#left{
+  width: 45%;
+  margin-right: .5em;
+  /**float:left;**/
+} 
+
+#right {
+  width: 60%;
+  margin-left: .5em;
+  /**float: right;**/
+} 
+
+#cheesepic{
+  float: left;
+  margin-right: 15px;
+}
+
+
+#cheeseinfo {
+  /*margin: 5% 15%; */
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%; 
+  background-color: rgba(15, 0, 0, .9);
+  border-radius: 25px;
+}
+
+#plating {
+  margin-top: 5%; 
+  padding: 5% ; 
+  background-color: rgba(15, 0, 0, .9);
+  border-radius: 25px;
+}
+
+#charcuterieboard {
+  /*margin: 5% 15%; */
+  padding-top: 2%;
+  padding-left:5%;
+  padding-right: 5%; 
+  padding-bottom: 5%;
+  background-color: rgba(15, 0, 0, .9);
+  border-radius: 25px;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.accordion:after {
+  content: '\032C'; 
+  font-size: 1.5em;
+  color: #000;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: '\2038'; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+#badge{
+  font-family: "Caprasimo", serif;
+  font-size: .75em;
+  text-align: center;
+  color: #fff !important; 
+  margin-top: -1em;
+  margin-bottom: 1em;
+  
+}
+
+.basicFont{
+  font-family:Arial, Helvetica, sans-serif !important;
+}
+
+#permafacts{
+  margin: auto 15% 5% 15%;
+  padding-top: 2%;
+  padding-left:2%;
+  padding-right: 2%; 
+  padding-bottom: 5%;
+  background-color: rgba(15, 0, 0, .9);
+  border-radius: 25px;
+}
+
+#permafacts h3, #permafacts li{
+  color: #fff;
+}
+
+#permafacts li {
+  font-family:Arial, Helvetica, sans-serif !important;
+}
+
+#permafacts a{
+  color: #fff !important;
+}
+
+
+/*****************************************/
+/***************MOBILE VIEW***************/
+/*****************************************/
+@media only screen and (max-width: 800px) {
+    #frameworkbuttons{
+     
+      margin: 0 auto;
+     
+    }
+
+    button.cbbuttons {
+      margin-top: 1em;
+      
+    }
+
+    button.cbbuttons {
+      
+      padding: .75em 1em;
+    }
+
+    form label{
+      margin-right: 0;
+    }
+    fieldset input{
+      display:flex-column;
+      justify-content: space-between;
+  }
+
+    #charcuterie-main{
+      display:block;
+      
+}
+    #left, #right{
+      width: 100%;
+    }
+
+    #right{
+      margin: 2%;
+      margin-left: 0 !important;
+    }
+  #footer p {
+    text-align: center !important;
+  }
+
+  #mobileSocials{
+    text-align: center !important;
+  }
+  
+  
+  }
+
+/*************PACKAGE CSS*************/
+
+
+#root {
+  min-width: 100%;
+  margin: 0 auto;
+  /*padding: 2rem;*/
+  text-align: center;
+}
+
+#root #topNav {
+  margin: 0;
 }
 
 .logo {
@@ -40,3 +591,4 @@
 .read-the-docs {
   color: #888;
 }
+/*************PACKAGE CSS*************/

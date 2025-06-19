@@ -1,3 +1,7 @@
+#generator-maincontent{
+  margin: 5% 0 20% 0;
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -22,10 +26,15 @@ a:hover {
   color: #535bf2;
 }
 
+nav{
+  margin-left: .5em;
+}
+
 body {
+  padding-top: .1em;
   margin: 0;
-  display: flex;
-  place-items: center;
+  /*display: flex;*/
+  /*place-items: center; */
   min-width: 320px;
   min-height: 100vh;
 }
