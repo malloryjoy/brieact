@@ -25,10 +25,9 @@ class MyForm extends React.Component {
     this.setState((prevState) => {
       const { myFilter } = prevState;
       if (myFilter.includes(filterName)) {
-        // Remove it
+
         return { myFilter: myFilter.filter((f) => f !== filterName) };
       } else {
-        // Add it
         return { myFilter: [...myFilter, filterName] };
       }
     });
