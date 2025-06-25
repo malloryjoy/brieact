@@ -10,9 +10,14 @@ import theBoards from './theBoards';
 {/*THIS IS THE FILE IN WHICH WE TAKE THE MYCHEESE VARIABLE AND THE FILTER VARIABLE 
   AND USE THEM TO DETERMINE WHICH BOARD THEY GET AND WHAT IT DOES OR DOESN'T INCLUDE*/}
 function Charcuterie (myCheese, myFilter)  {
-  const myBoard = JSON.stringify(myCheese);
-  if (myBoard == "american"){
-    return theBoards.american;
+  const theCheese = JSON.stringify(myCheese);
+  const theFilter = JSON.stringify(myFilter);
+  let myBoard[];
+  if (theCheese == "american"){
+    return myBoard[] = theBoards.american;
+  }
+  if (theFilter.includes('zero-proof')){
+    //remove wine option from selected board 
   }
 //continue if/else statements for each board 
 //add boardFilter constant that stringify filter 
