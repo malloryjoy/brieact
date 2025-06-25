@@ -17,7 +17,8 @@ function Charcuterie (myCheese, myFilter)  {
 //continue if/else statements for each board 
 //add boardFilter constant that stringify filter 
 //if boardFilter contains nut free, remove nut value, if it contains zeroproof, remove alcohol, if it contains vegetarian, remove meat
-//next step will be creating each object/Charcuterie board
+//next step will be how to break apart the Charcuterie board block into separate sections; as of now 
+//Charcuterie returns the entire object with key/pair values and the values need to be able to go into different spots across the page. 
 //following step will be building out cB html page and including/injecting the respective component value in the correct place like <Charcuterie 
   
 }
