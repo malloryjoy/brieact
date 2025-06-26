@@ -10,7 +10,7 @@ class DropDown extends React.Component {
       
       return (<><div className="dropdown">
         
-      <select value={this.props.myCheese} id="cheeseOptions" name="cheeseOptions" onChange={(e) => this.props.onChange(e.target.value)}>
+      <select value={this.props.myCheese} id="cheeseOptions" name="cheeseOptions">
       <option value="default" disabled>Select Your Cheese</option>
           <option value="American">American</option>
           <option value="Asiago">Asiago</option>

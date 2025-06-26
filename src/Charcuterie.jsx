@@ -12,9 +12,9 @@ import theBoards from './theBoards';
 function Charcuterie (myCheese, myFilter)  {
   const theCheese = JSON.stringify(myCheese);
   const theFilter = JSON.stringify(myFilter);
-  let myBoard[];
+  let myBoard;
   if (theCheese == "american"){
-    return myBoard[] = theBoards.american;
+    return myBoard = theBoards.american;
   }
   if (theFilter.includes('zero-proof')){
     //remove wine option from selected board 
