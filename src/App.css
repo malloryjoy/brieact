@@ -516,6 +516,10 @@ color: #fff !important;
   color: #fff !important;
 }
 
+#permafacts a:hover{
+  text-decoration:underline;
+}
+
 
 /*****************************************/
 /***************MOBILE VIEW***************/
