@@ -1,23 +1,33 @@
 import { useState } from 'react'
-
+import theBoards from './theBoards';
 import './App.css'
 import React from 'react';
 import About from './components/About';
 import Display from './components/Display';
+import Charcuterie from './components/Charcuterie';
 
 
-function Board() {
-  
+function Board({myCheese}) {
+  const key = myCheese.toLowerCase();
+  const board = theBoards[key];
+  console.log(board);
+
+  if (!board) return <p>ERROR</p>
 
     return (<>
         <div id="board">
         
         <div id="left">
   
-                 <About />
-                <Display />
+                 <About board={board}/>
+                <Display board={board}/>
+        </div>
 
-        
+        <div id="right">
+                <Charcuterie board={board}/>
+
+
+
         </div>
                  {/* 
                  <Contents /> **/}

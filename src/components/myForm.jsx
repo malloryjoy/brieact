@@ -7,23 +7,40 @@ import FilterBoard from './FilterBoard';
 
 
 
-class MyForm extends React.Component {
+function MyForm ({myCheese, setMyCheese, setShowBoard}) {
 
+  
+  
+  const [myFilters, setMyFilters] = useState([]);
+
+  const handleCheckboxChange = (event) =>{
+    const {value, checked } = event.target;
+    if (checked) {
+      setMyFilters(prev => [...prev, value]);
+    } else{
+      setMyFilters(prev => prev.filter(item => item !== value));
+    }
+  }
  
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setShowBoard(true);
+    console.log(`You selected: ${myCheese} and the following filters: ${myFilters.join(", ")}`);
+  }
 
-    render() {
+    
         
       return (<>
       
-        
-            <SelectCheese />
-
-            <FilterBoard />
-            <p style={{textAlign: "center"}}><a href="/charcuterieboard.html"><input  type="submit" value="CHEESE IT!" id="startmeup" className="front cbbuttons "/></a></p> 
+        <form onSubmit={handleSubmit}>
+            <SelectCheese myCheese={myCheese} setMyCheese={setMyCheese}/>
             
+            <FilterBoard handleCheckboxChange={handleCheckboxChange}/>
+            <p style={{textAlign: "center"}}><input  type="submit" value="CHEESE IT!" id="startmeup" className="front cbbuttons " /></p> 
+            </form>
        
         </>)
-    }
+    
   }
 
   export default MyForm

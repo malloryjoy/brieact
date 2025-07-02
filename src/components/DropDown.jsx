@@ -4,13 +4,14 @@ import React from 'react';
 
 
 
-class DropDown extends React.Component {
+function DropDown({ myCheese, setMyCheese }) {
+  
+  const handleChange = (event) => {setMyCheese(event.target.value)};
  
-    render() {
+  
+    return (<><div className="dropdown">
       
-      return (<><div className="dropdown">
-        
-      <select value={this.props.myCheese} id="cheeseOptions" name="cheeseOptions">
+    <select value={myCheese} onChange={handleChange} id="cheeseOptions" name="cheeseOptions" >
       <option value="default" disabled>Select Your Cheese</option>
           <option value="American">American</option>
           <option value="Asiago">Asiago</option>
@@ -40,7 +41,7 @@ class DropDown extends React.Component {
       </select></div>
       </>)
     }
-  }
+    
   
 
   export default DropDown
