@@ -22,6 +22,15 @@ const theBoards = {
         saltyInfo : "Sticking to the 'burger' of it all, the briny, salty flavor of pickles makes a basic dill or even bread and butter sandwich pickles a fine addition to your board. Meanwhile, carrots provide a light flavor and a bold crunch to the softer cheese textures and stronger flavors on the board.",
         sweetName : "Kinder chocolate, Fig Cookies, Caramels",
         sweetInfo : "Hazlenut chocolates add a classic sweetness with an extra nutty kick. Meanwhile, something like a Fig Newton offers a jammy, soft texture that matches the mild nature of your American cheese while also complementing the earthy nature of your Gorgonzola. If you want a true blend of salty sweet, caramel soft candies (or even butterscotch!) are a fun flavor to add to this board.",
+        wineName: "Pinot Noir!",
+        wineInfo: "Wine bottles make a charcuterie board even better!",
+        knife1: "Sharp knife",
+        knife2: "Pronged knife",
+        knife1cheese: "This will be the same as cheese 1",
+        knife2cheese: "This will be the same as complementary cheese",
+        hasNuts: true,
+        hasMeat: true,
+        hasWine: true
     },
 
 
