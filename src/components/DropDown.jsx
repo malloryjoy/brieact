@@ -12,7 +12,7 @@ function DropDown({ myCheese, setMyCheese }) {
     return (<><div className="dropdown">
       
     <select value={myCheese} onChange={handleChange} id="cheeseOptions" name="cheeseOptions" >
-      <option value="default" disabled>Select Your Cheese</option>
+          <option value="default">Select Your Cheese</option>
           <option value="American">American</option>
           <option value="Asiago">Asiago</option>
           <option value="Boursin">Boursin</option>
