@@ -16,22 +16,27 @@ function AccordionSection({ label, content }) {
   );
 }
 
-function Charcuterie({board}) {
+
+
+function Charcuterie({board, myFilters}) {
+  const veg = myFilters.includes("Vegetarian");
+  const nutFree = myFilters.includes("Nut-Free");
+  const zeroProof = myFilters.includes("Zero-Proof");
 
     return (
 
         <div id ="charcuterieboard">
                 <h3>Your Board</h3>
-                
+                <p id="badge">{myFilters}</p>
                 <div className="boardelements">
                 <AccordionSection label={`Bread/Cracker – ${board.biscuitName}`}  content={board.biscuitInfo}     />
                 <AccordionSection label={`Spread – ${board.spreadName}`} content={board.spreadInfo} />
-                <AccordionSection label={`Meat – ${board.meatName}`} content={board.meatInfo} />
+                {!veg  && <AccordionSection label={`Meat – ${board.meatName}`} content={board.meatInfo} />}
                 <AccordionSection label={`Fruit – ${board.fruitName}`} content={board.fruitInfo} />
                 <AccordionSection label={`Complimentary Cheeses – ${board.compCheese1} and ${board.compCheese2}`} content={board.compCheeseInfo} />
-                <AccordionSection label={`Salty Supplements – ${board.saltyOptions}`} content={board.saltyInfo} />
+                {!nutFree &&<AccordionSection label={`Salty Supplements – ${board.saltyOptions}`} content={board.saltyInfo} />}
                 <AccordionSection label={`Sweet Treat – ${board.sweetName}`} content={board.sweetInfo} />
-                <AccordionSection label={`Wine – ${board.wineName}`} content={board.wineInfo} />            
+                {!zeroProof && <AccordionSection label={`Wine – ${board.wineName}`} content={board.wineInfo} />   }         
                 </div>
               
 

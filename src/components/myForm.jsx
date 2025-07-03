@@ -7,11 +7,12 @@ import FilterBoard from './FilterBoard';
 
 
 
-function MyForm ({myCheese, setMyCheese, setShowBoard, setShowForm}) {
+function MyForm ({myCheese, setMyCheese, setShowBoard, setShowForm, myFilters, setMyFilters}) {
 
   
   
-  const [myFilters, setMyFilters] = useState([]);
+  
+  
 
   const handleCheckboxChange = (event) =>{
     const {value, checked } = event.target;
@@ -21,6 +22,8 @@ function MyForm ({myCheese, setMyCheese, setShowBoard, setShowForm}) {
       setMyFilters(prev => prev.filter(item => item !== value));
     }
   }
+
+ 
  
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -28,7 +31,11 @@ function MyForm ({myCheese, setMyCheese, setShowBoard, setShowForm}) {
     setShowForm(false);
     
     
+    
     console.log(`You selected: ${myCheese} and the following filters: ${myFilters.join(", ")}`);
+    console.log(`Here are your filters: ${myFilters}`);
+
+    
   }
 
     

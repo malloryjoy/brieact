@@ -10,6 +10,7 @@ function App() {
   const [myCheese, setMyCheese] = useState('');
   const [showBoard, setShowBoard] = useState(false);
   const [showForm, setShowForm] = useState(true);
+  const [myFilters, setMyFilters] = useState([]);
 
   const toggleVisibility = () =>{
     setShowForm(!showForm)
@@ -21,8 +22,8 @@ function App() {
       
     
 
-               {showForm && <MyForm myCheese={myCheese} setMyCheese={setMyCheese} setShowBoard={setShowBoard} setShowForm={setShowForm} />}
-               {showBoard && <Board myCheese={myCheese}/>}
+               {showForm && <MyForm myCheese={myCheese} setMyCheese={setMyCheese} setShowBoard={setShowBoard} setShowForm={setShowForm} myFilters={myFilters} setMyFilters={setMyFilters}/>}
+               {showBoard && <Board myCheese={myCheese} myFilters={myFilters}/>}
             
             
            

@@ -7,7 +7,7 @@ import Display from './components/Display';
 import Charcuterie from './components/Charcuterie';
 
 
-function Board({myCheese}) {
+function Board({myCheese,myFilters}) {
   const key = myCheese.toLowerCase();
   const board = theBoards[key];
   console.log(board);
@@ -24,7 +24,7 @@ function Board({myCheese}) {
         </div>
 
         <div id="right">
-                <Charcuterie board={board}/>
+                <Charcuterie board={board} myFilters={myFilters}/>
 
 
 
