@@ -7,7 +7,7 @@ import FilterBoard from './FilterBoard';
 
 
 
-function MyForm ({myCheese, setMyCheese, setShowBoard}) {
+function MyForm ({myCheese, setMyCheese, setShowBoard, setShowForm}) {
 
   
   
@@ -25,6 +25,9 @@ function MyForm ({myCheese, setMyCheese, setShowBoard}) {
   const handleSubmit = (event) => {
     event.preventDefault();
     setShowBoard(true);
+    setShowForm(false);
+    
+    
     console.log(`You selected: ${myCheese} and the following filters: ${myFilters.join(", ")}`);
   }
 

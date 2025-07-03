@@ -6,28 +6,22 @@ import Board from './Board.jsx'
 
 
 
-
-/*if submitted == true {
-  show Board
-}
-
-else {
-  show Form
-} 
-  
-
-LOOK UP USE STATE PROCESS I KNOW YOU ALREADY DID THAT BUT IT'S OVER THERE */
-
 function App() {
   const [myCheese, setMyCheese] = useState('');
   const [showBoard, setShowBoard] = useState(false);
+  const [showForm, setShowForm] = useState(true);
+
+  const toggleVisibility = () =>{
+    setShowForm(!showForm)
+  };
+  
   
   return (<>
       <div>
       
     
 
-               <MyForm myCheese={myCheese} setMyCheese={setMyCheese} setShowBoard={setShowBoard}/>
+               {showForm && <MyForm myCheese={myCheese} setMyCheese={setMyCheese} setShowBoard={setShowBoard} setShowForm={setShowForm} />}
                {showBoard && <Board myCheese={myCheese}/>}
             
             
