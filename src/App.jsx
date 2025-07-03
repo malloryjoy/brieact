@@ -15,10 +15,36 @@ function App() {
   const toggleVisibility = () =>{
     setShowForm(!showForm)
   };
+
+  const handleReset = () => {
+    setShowBoard(false);
+    setMyCheese('');
+    setMyFilters([]);
+  };
+
   
   
   return (<>
       <div>
+
+      <nav id="topNav" className="goback">
+        <ul className="siteNav">
+          <li className="navItem">
+            {showBoard ? (
+              <a href="#" onClick={handleReset}>
+                <i className="fa-solid fa-arrow-left"></i>
+              </a>
+            ) : (
+              <a href="/index.html" aria-label="Return to portfolio">
+                <i className="fa-solid fa-arrow-left"></i>
+              </a>
+            )}
+            <span className="chooseJS">
+              {showBoard ? 'Generate New Board' : 'Return to Landing'}
+            </span>
+          </li>
+        </ul>
+      </nav>
       
     
 

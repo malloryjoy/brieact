@@ -462,13 +462,13 @@ color: #fff !important;
   background-color: #ccc; 
 }
 
-.accordion:after {
+/*.accordion:after {
   content: '\032C'; 
   font-size: 1.5em;
   color: #000;
   float: right;
   margin-left: 5px;
-}
+} */
 
 .active:after {
   content: '\2038'; 
@@ -479,6 +479,10 @@ color: #fff !important;
   display: none;
   background-color: white;
   overflow: hidden;
+}
+
+.panel p{
+  text-align: left;
 }
 
 #badge{
