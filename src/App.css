@@ -577,6 +577,12 @@ color: #fff !important;
   
   }
 
+  #inputSection{
+    display: "flex"; 
+    flex-direction: "column"; 
+    align-items: "flex-start";
+  }
+
 /*************PACKAGE CSS*************/
 
 
