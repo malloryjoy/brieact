@@ -541,10 +541,23 @@ color: #fff !important;
       
     }
 
+
     button.cbbuttons {
       
       padding: .75em 1em;
     }
+
+    #root #topNav {
+      margin: 0;
+      margin-left: -5em !important; 
+  }
+
+
+    .goback .navItem {
+      width: 20em;
+      margin-left: -2em;
+      background-color: transparent !important;
+}
 
     form label{
       margin-right: 0;
@@ -576,7 +589,7 @@ color: #fff !important;
 
   #cheeseOptions{
     margin-top: 2em;
-    width: 20em;
+    width: 18em;
     height: 3em;
   }
   
