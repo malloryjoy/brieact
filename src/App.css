@@ -580,9 +580,6 @@ color: #fff !important;
     height: 3em;
   }
   
-  
-  }
-
   #inputSection{
     display: flex; 
     flex-direction: column; 
@@ -601,6 +598,10 @@ color: #fff !important;
   padding-right: 5%;
   padding-bottom: 5%;
 }
+  
+}
+
+  
 
 /*************PACKAGE CSS*************/
 

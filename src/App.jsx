@@ -30,15 +30,15 @@ function App() {
       <nav id="topNav" className="goback">
         <ul className="siteNav">
           <li className="navItem">
-            {showBoard ? (
-              <a href="#" onClick={handleReset}>
-                <i className="fa-solid fa-arrow-left"></i>
+          {showBoard ? (
+            <a href="" aria-label="Generate new board">
+              <i className="fa-solid fa-arrow-left"></i>
+            </a>
+          ) : (
+              <a href="https://malloryjoy.dev/charcuterie/" aria-label="Return to portfolio">
+              <i className="fa-solid fa-arrow-left"></i>
               </a>
-            ) : (
-              <a href="/index.html" aria-label="Return to portfolio">
-                <i className="fa-solid fa-arrow-left"></i>
-              </a>
-            )}
+      )}
             <span className="chooseJS">
               {showBoard ? 'Generate New Board' : 'Return to Landing'}
             </span>
