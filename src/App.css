@@ -573,15 +573,34 @@ color: #fff !important;
   #mobileSocials{
     text-align: center !important;
   }
+
+  #cheeseOptions{
+    margin-top: 2em;
+    width: 20em;
+    height: 3em;
+  }
   
   
   }
 
   #inputSection{
-    display: "flex"; 
-    flex-direction: "column"; 
-    align-items: "flex-start";
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start;
   }
+
+  #charcuterie-main, #board {
+    display: block;
+    margin: 5% 10%;
+}
+
+#permafacts {
+  margin: auto 10% 5% 10%;
+  padding-top: 2%;
+  padding-left: 0%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+}
 
 /*************PACKAGE CSS*************/
 
